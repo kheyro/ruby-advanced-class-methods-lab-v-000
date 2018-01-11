@@ -46,6 +46,8 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    filename.split(/[-.\s]/)
-
+    file = filename.split(/[-.\s]/).reject!(&:empty?)
+    song = self.new
+    song.name = file[1]
+    song
 end

@@ -50,4 +50,5 @@ class Song
     song = self.new
     song.name = file[1]
     song
+  end
 end

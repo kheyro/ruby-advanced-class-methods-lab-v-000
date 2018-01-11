@@ -45,8 +45,13 @@ class Song
     self.all.clear
   end
 
-  def self.new_from_filename(filename)
+  def split_filename(filename)
     file = filename.split(/[-.]/).map(&:strip)
+    file
+  end
+  
+  def self.new_from_filename(filename)
+    file = split_filename(filename)
     song = self.new
     song.name = file[1]
     song.artist_name = file.first

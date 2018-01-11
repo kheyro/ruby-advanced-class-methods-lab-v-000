@@ -44,4 +44,8 @@ class Song
   def self.destroy_all
     self.all.clear
   end
+
+  def self.new_from_filename(filename)
+    filename.split(/-\.\s/)
+  
 end

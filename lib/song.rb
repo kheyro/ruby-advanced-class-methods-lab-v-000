@@ -46,7 +46,7 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    file = filename.split(/-./)
+    file = filename.split(/-\./)
     song = self.new
     song.name = file[1]
     song

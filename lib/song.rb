@@ -39,8 +39,7 @@ class Song
 
   def self.alphabetical
     test = []
-    self.all.each { |song| test << song.name }
-    test.sort
+    self.all.sort
   end
 
   def self.destroy_all

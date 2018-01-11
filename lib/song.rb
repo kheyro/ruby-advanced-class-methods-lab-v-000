@@ -49,7 +49,7 @@ class Song
     file = filename.split(/[-.]/).map(&:strip)
     file
   end
-  
+
   def self.new_from_filename(filename)
     file = split_filename(filename)
     song = self.new

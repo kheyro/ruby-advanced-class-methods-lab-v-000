@@ -38,7 +38,6 @@ class Song
   end
 
   def self.alphabetical
-    test = []
     self.all.sort_by {|song| song.name}
   end
 

@@ -12,7 +12,7 @@ class Song
     song.artist_name = artist_name
     song
   end
-  
+
   def save
     self.class.all << self
   end

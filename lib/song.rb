@@ -6,6 +6,13 @@ class Song
     @@all
   end
 
+  def self.create
+    song = Song.new
+    song.name = name
+    song.artist_name = artist_name
+    song
+  end
+  
   def save
     self.class.all << self
   end

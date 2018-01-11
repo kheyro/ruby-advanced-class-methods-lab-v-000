@@ -6,10 +6,6 @@ class Song
     @@all
   end
 
-  def initialize(name)
-    @name = name
-  end
-
   def self.create
     song = self.new
     # song.name = name
